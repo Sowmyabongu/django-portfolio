@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container my-5">
+  
+
+  <div class="row justify-content-center g-4">
+    {% for eachitem in experience %}
+    <div class="col-md-8">
+      <div class="card border-0 shadow-lg experience-card">
+        <div class="card-body bg-dark text-light rounded-4 p-4">
+
+          <!-- Company and Role -->
+          <h3 class="card-title mb-2" style="color:#ffb703;">{{ eachitem.company }}</h3>
+          <h5 class="card-subtitle mb-3 text-light">{{ eachitem.position }}</h5>
+
+          <!-- Description -->
+          <p class="card-text text-secondary">
+            {{ eachitem.description }}
+          </p>
+
+          <!-- Duration (optional) -->
+          {% if eachitem.duration %}
+          <p class="text-warning mt-2"><strong>Duration:</strong> {{ eachitem.duration }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+  .experience-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #003049;
+  }
+
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+
+  .card-subtitle {
+    font-style: italic;
+  }
+
+  .card-text {
+    font-size: 1.05rem;
+  }
+</style>
+
+{% endblock content1 %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container my-5">
+  
+
+  <div class="row justify-content-center g-4">
+
+    <!-- 🌐 CCNA Certification -->
+    <div class="col-md-8">
+      <div class="card border-0 shadow-lg cert-card">
+        <div class="card-body bg-dark text-light rounded-4 p-4">
+          <h3 class="card-title mb-2" style="color:#ffb703;">python</h3>
+          <p class="card-text text-secondary">
+            This certificate recognizes the successful completion of the Python Course for Beginners with Certification: Mastering the Essentials from <b>Scaler</b> . It highlights the completion of 16 modules, 121 video tutorials, and 10 challenges, demonstrating strong foundational knowledge in Python programming.
+          </p>
+          <a href="{% static 'certificates/python.jpg' %}" target="_blank" class="btn btn-outline-warning mt-2">
+             View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🐍 Python Certification -->
+    <div class="col-md-8">
+      <div class="card border-0 shadow-lg cert-card">
+        <div class="card-body bg-dark text-light rounded-4 p-4">
+          <h3 class="card-title mb-2" style="color:#ffb703;">JavaScript</h3>
+          <p class="card-text text-secondary">
+            This certificate recognizes the successful completion of the JS.0x: JavaScript Introduction course offered by W3Cx through <b>edX</b>. It demonstrates foundational knowledge of JavaScript concepts and programming principles essential for web development.
+          </p>
+          <a href="{% static 'certificates/js(edx).pdf' %}" target="_blank" class="btn btn-outline-warning mt-2">
+             View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="col-md-8">
+      <div class="card border-0 shadow-lg cert-card">
+        <div class="card-body bg-dark text-light rounded-4 p-4">
+          <h3 class="card-title mb-2" style="color:#ffb703;">Data sceince</h3>
+          <p class="card-text text-secondary">
+            Completed an 8-week internship in <b>codtech</b> focused on data analysis, machine learning, and visualization using Python,Pandas, and Scikit-learn.ng, and interpreting large datasets to uncover meaningful insights. 
+          </p>
+          <a href="{% static 'certificates/Datasceince(codtech).pdf' %}" target="_blank" class="btn btn-outline-warning mt-2">
+             View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<!-- 💅 CSS Styling -->
+<style>
+  .cert-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #003049;
+  }
+
+  .cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 1.05rem;
+  }
+
+  .btn-outline-warning {
+    border: 2px solid #ffb703;
+    color: #ffb703;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-warning:hover {
+    background-color: #ffb703;
+    color: #003049;
+    font-weight: bold;
+  }
+</style>
+
+{% endblock content1 %}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    <!-- Left Section: Contact Info -->
+    <div class="col-md-5 text-center text-light">
+      <h1 class="mb-4" style="color: #ffb703;">Stay Connected</h1>
+
+      <!-- Email & Phone -->
+      <div class="d-flex flex-column align-items-center">
+        <!-- Email -->
+        <div class="d-flex align-items-center mb-3">
+          <img src="{% static 'images/mail.png' %}" alt="Email" width="25" height="25" class="me-2">
+          <a href="mailto:sowmyabongu16@gmail.com" class="text-white text-decoration-none fs-5">
+            sowmyabongu16@gmail.com
+          </a>
+        </div>
+
+        <!-- Phone -->
+        <div class="d-flex align-items-center mb-4">
+          <img src="{% static 'images/phone.png' %}" alt="Phone" width="25" height="25" class="me-2">
+          <a href="tel:+919392057495" class="text-white text-decoration-none fs-5">
+            +91 9392057495
+          </a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="d-flex justify-content-center align-items-center mt-4">
+        <a href="https://www.linkedin.com/in/bongu-sowmya-699981357/" target="_blank" class="ms-3">
+          <img src="{% static 'images/linkendin.png' %}" alt="LinkedIn" width="45" height="45" class="social_links">
+        </a>
+
+        <a href="https://github.com/Sowmyabongu" target="_blank" class="ms-3">
+          <img src="{% static 'images/git.png' %}" alt="GitHub" width="45" height="45" class="social_links">
+        </a>
+
+        <a href="https://leetcode.com/u/sowmya_1610/" target="_blank" class="ms-3">
+          <img src="{% static 'images/leetcode.png' %}" alt="LeetCode" width="45" height="45" class="social_links">
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Section: Contact Form -->
+    <div class="col-md-6 offset-md-1">
+      <div class="container form-container bg-light p-4 rounded shadow" 
+           style="border: 3px solid #ffb703; box-shadow: 0 0 20px rgba(255, 183, 3, 0.4);">
+        <h4 class="mb-3 text-center" style="color:#1a0025;">Send a Message</h4>
+        <form>
+          <div class="form-group m-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group m-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group m-3">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+
+          <div class="form-group m-3">
+            <label for="msg">Message</label>
+            <textarea class="form-control" id="msg" rows="2" placeholder="Type your message..."></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content1 %}

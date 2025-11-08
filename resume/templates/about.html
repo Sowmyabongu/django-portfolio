@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container my-5">
+  <div class="row align-items-center">
+
+    <!-- Left Side: About Me -->
+    <div class="col-md-6 text-light">
+      <div class="p-4 rounded shadow about-box">
+        <h2 class="mb-3 text-highlight">About Me</h2>
+        <p class="fs-5">
+          Hello! I’m <b class="highlight-text">Bongu Sowmya</b>, a passionate and detail-oriented individual
+          with a strong foundation in <b>programming</b>, <b>data analysis</b>, and
+          <b>web development</b>. I love creating efficient, modern, and scalable
+          solutions that bring ideas to life.
+        </p>
+        <p class="fs-5">
+          I’m always excited to explore new technologies, frameworks, and innovations in
+          <b>AI</b> and <b>Machine Learning</b>, while growing as a developer and problem solver.
+        </p>
+
+        <!-- Education Section -->
+        <h3 class="mt-4 text-highlight">Education</h3>
+        <div class="education-box p-3 rounded">
+          <p class="fs-5 mb-0"><b>B.Tech in Information Technology</b></p>
+          <p class="fs-5">JNTUGV College of Engineering (2022 – 2026)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Skills Section -->
+    <div class="col-md-6">
+      <h2 class="text-center mb-4 text-highlight">Technical Skills</h2>
+
+      <div class="p-4 rounded shadow" style="background-color:#669bbc;">
+        <div class="d-flex flex-wrap justify-content-center gap-3 text-light fs-5">
+          <span class="badge bg-dark px-3 py-2">C</span>
+          <span class="badge bg-dark px-3 py-2">Python</span>
+          <span class="badge bg-dark px-3 py-2">Java</span>
+          <span class="badge bg-dark px-3 py-2">Django</span>
+          <span class="badge bg-dark px-3 py-2">HTML</span>
+          <span class="badge bg-dark px-3 py-2">CSS</span>
+          <span class="badge bg-dark px-3 py-2">JavaScript</span>
+          <span class="badge bg-dark px-3 py-2">DSA</span>
+          <span class="badge bg-dark px-3 py-2">Pandas</span>
+          <span class="badge bg-dark px-3 py-2">NumPy</span>
+          <span class="badge bg-dark px-3 py-2">Seaborn</span>
+          <span class="badge bg-dark px-3 py-2">Matplotlib</span>
+          <span class="badge bg-dark px-3 py-2">scikit-learn</span>
+          <span class="badge bg-dark px-3 py-2">MySQL</span>
+          <span class="badge bg-dark px-3 py-2">EDA</span>
+          <span class="badge bg-dark px-3 py-2">SQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional Animation & Style -->
+<style>
+  .shadow {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  .shadow:hover {
+    transform: scale(1.03);
+  }
+  .badge {
+    border-radius: 25px;
+    font-size: 1.1rem;
+  }
+  .about-box {
+    background-color: rgba(102, 155, 188, 0.25);
+    border-left: 5px solid #ffb703;
+  }
+  .education-box {
+    background-color: rgba(255, 183, 3, 0.15);
+    border-left: 4px solid #ffb703;
+  }
+  .text-highlight {
+    color: #ffb703;
+  }
+  .highlight-text {
+    color: #ffb703;
+    font-weight: bold;
+  }
+</style>
+
+{% endblock content1 %}

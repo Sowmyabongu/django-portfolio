@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<style>
+  /* 🌟 Layout Styling */
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 20px;
+  }
+
+  /* 🖼️ Profile Image Styling */
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #ffb703;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* 🧑‍💻 Intro Text */
+  .intro-text {
+    color: #ffffff;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .intro-text h1 {
+    font-size: 2.5rem;
+    color: #ffb703;
+    font-weight: 700;
+  }
+
+  .intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+
+  /* 🔗 Social Links */
+  .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #ffb703;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .social-links a img:hover {
+    transform: scale(1.1);
+    background-color: #ffb703;
+  }
+
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro-text {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- 💫 Main Section -->
+<div class="intro-section">
+  <!-- 🖼️ Left: Profile Photo -->
+  <div>
+    <img src="{% static 'images/im.jpg' %}" alt="Profile Photo" class="profile-image">
+  </div>
+
+  <!-- 🧠 Right: Intro Text -->
+  <div class="intro-text">
+    <h2>Hello, I’m  </h2>
+    <h1>Bongu Sowmya</h2>
+    <p>
+      I’m an aspiring software developer passionate about building impactful web applications 
+      and learning new technologies. I love exploring full-stack development, data science, 
+      and creating elegant user experiences through clean and efficient code.
+    </p>
+
+    <!-- 🌐 Social Icons -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/bongu-sowmya-699981357/" target="_blank">
+        <img src="{% static 'images/linkendin.png' %}" alt="LinkedIn">
+      </a>
+
+      <a href="https://github.com/Sowmyabongu" target="_blank">
+        <img src="{% static 'images/git.png' %}" alt="GitHub">
+      </a>
+
+      <a href="https://leetcode.com/u/sowmya_1610/" target="_blank">
+        <img src="{% static 'images/leetcode.png' %}" alt="LeetCode">
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock content1 %}

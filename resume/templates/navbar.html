@@ -1,0 +1,43 @@
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a0025;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- Left Side: Email & Phone -->
+    <div class="d-flex flex-column align-items-start ms-4">
+      <div class="d-flex align-items-center mb-1">
+        <img src="{% static 'images/mail.png' %}" alt="Email" width="18" height="18" class="me-2">
+        <a href="mailto:sowmyabongu16@gmail.com" class="text-white text-decoration-none small">
+          sowmyabongu16@gmail.com
+        </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="{% static 'images/phone.png' %}" alt="Phone" width="18" height="18" class="me-2">
+        <a href="tel:+919392057495" class="text-white text-decoration-none small">
+          +91 9392057495
+        </a>
+      </div>
+    </div>
+
+    <!-- Navbar Toggler (Mobile View) -->
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right Side: Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-4">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'experience' %}">Experiences</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'certificate' %}">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
