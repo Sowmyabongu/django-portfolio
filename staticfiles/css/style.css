@@ -1,86 +1,114 @@
-body{
-    background-color: rgb(20,0,30);
+/* 🌊 Page Background */
+body {
+    background-color: #003049;  /* Dark navy for background */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-nav .nav-link:hover{
-    font-weight:bold;
-    color:#4fffb0;
+/* 🌅 Navbar Styling */
+.navbar-dark {
+    background-color: #669bbc;  /* Light blue for navbar */
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-nav .nav-link{
-    font-size: 20px;
-}
-
-.navbar-brand{
+.navbar-brand {
     font-size: 25px;
+    font-weight: bold;
+    color: #ffffff !important;
 }
 
-.navbar-dark{
-    background-color: rgb(18,1,46);
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #ffffff !important;
+    transition: all 0.3s ease-in-out;
 }
 
-.circular-image-container{
-    width:200px;
-    height:200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #ffb703 !important;  /* Golden hover */
 }
 
-.circular-image{
-width:120%;
-height: auto;
-display: block;
-}
-
-.name{
-    color: #fff;
-}
-
-.title{
-    color: #4fffb0;
-}
-
-.social_links{
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about_image{
+/* 🖼️ Circular Image Styling */
+.circular-image-container {
     width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #669bbc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.circular-image {
+    width: 120%;
     height: auto;
     display: block;
 }
 
-.jumbtron{
-    background-color: #002244;
-    padding:20px;
-    border-radius:10px;
+/* 📝 Text Styles */
+.name {
+    color: #ffffff;
+    font-weight: bold;
 }
 
-
-.display4 {
-color: #eef3f8;
-font-size: 24px;
+.title {
+    color: #ffb703;
+    font-weight: 600;
 }
 
-.lead{
-    font-size: 18px;
-    color:#28a745;
+/* 🔗 Social Links */
+.social_links {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #669bbc;
 }
 
-.form-container{
-    border: 2px solid white;
+/* 👤 About Image */
+.about_image {
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* 🟦 Jumbotron Section */
+.jumbtron {
+    background-color: #669bbc;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+/* 🏷️ Display Heading */
+.display4 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ✍️ Paragraph Lead */
+.lead {
+    font-size: 18px;
+    color: #ffb703;
+}
+
+/* 📄 Form Container */
+.form-container {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #669bbc;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
